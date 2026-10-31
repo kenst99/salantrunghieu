@@ -1,0 +1,497 @@
+{
+  "version": 3,
+  "updatedAt": 1793411141795,
+  "seo": {
+    "title": "Vận Tải Thủy Trung Hiếu – Sà lan chở cát đá, gạch, cọc bê tông, phế liệu",
+    "description": "Công ty TNHH TM Vận Tải Thủy Trung Hiếu (Sóc Trăng, thành lập 2001) vận chuyển cát, đá, gạch, cọc bê tông, phế liệu bằng sà lan đi miền Tây, TP.HCM, Đồng Nai, Bình Dương, Vũng Tàu, Phú Quốc. Giá cạnh tranh, đúng hẹn. Gọi 0918.108.369.",
+    "keywords": "vận tải thủy, sà lan, vận chuyển cát, vận chuyển đá, vận chuyển gạch, vận chuyển cọc bê tông, vận chuyển phế liệu, sà lan Sóc Trăng, vận tải đường thủy nội địa, Trung Hiếu",
+    "url": "",
+    "image": ""
+  },
+  "brand": {
+    "mark": "TH",
+    "short": "TRUNG HIẾU • TỪ 2001",
+    "company": "CÔNG TY TNHH THƯƠNG MẠI VẬN TẢI THỦY TRUNG HIẾU",
+    "sub": "MST 2200208369 • SÓC TRĂNG • TỪ 2001"
+  },
+  "intro": {
+    "ctaText": "GỌI 0918.108.369",
+    "ctaHref": "tel:0918108369",
+    "cta2Text": "GỌI 077.959.6668",
+    "cta2Href": "tel:0779596668",
+    "routeTag": "MẠNG LƯỚI TUYẾN SÔNG",
+    "showMap": true,
+    "stats": [
+      {
+        "label": "THÀNH LẬP",
+        "value": "2001"
+      },
+      {
+        "label": "ĐỘI TÀU",
+        "value": "3 sà lan"
+      },
+      {
+        "label": "ĐIỂM ĐẾN",
+        "value": "11 khu vực"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "gioi-thieu",
+      "type": "hero",
+      "num": "00",
+      "barge": "cat",
+      "accent": "#d4a574",
+      "accentSoft": "#f6e8d5",
+      "kicker": "VẬN TẢI THỦY NỘI ĐỊA • SÓC TRĂNG • TỪ NĂM 2001",
+      "title": "Vận Tải Thủy\nTrung Hiếu",
+      "desc": "Công ty TNHH Thương Mại Vận Tải Thủy Trung Hiếu được thành lập năm 2001 tại Sóc Trăng, chuyên vận chuyển hàng hóa bằng sà lan trên các tuyến sông, kênh rạch miền Tây Nam Bộ và khu vực TP.HCM – Đông Nam Bộ.\n\nVới đội 3 sà lan, chúng tôi nhận vận chuyển cát, đá, gạch, cọc bê tông và phế liệu đi An Giang, Long An, Phú Quốc, Vũng Tàu, Cần Giờ, Đồng Nai, Bình Dương, TP.HCM, Cần Thơ, Sóc Trăng và Cà Mau. Giá cả cạnh tranh, giao hàng đúng hẹn.",
+      "meta": [
+        "THÀNH LẬP 2001",
+        "3 SÀ LAN",
+        "GIÁ CẠNH TRANH",
+        "ĐÚNG HẸN"
+      ]
+    },
+    {
+      "id": "cat-da",
+      "type": "normal",
+      "num": "01",
+      "barge": "da",
+      "accent": "#c9a36b",
+      "accentSoft": "#fff1dc",
+      "kicker": "VẬN CHUYỂN CÁT • ĐÁ XÂY DỰNG BẰNG SÀ LAN",
+      "title": "01 / Cát & Đá\nXây Dựng",
+      "desc": "Cát và đá là nhóm vật liệu cần khối lượng lớn cho mỗi công trình, từ san lấp mặt bằng, đổ bê tông đến xây tô hoàn thiện. Vận chuyển bằng sà lan giúp chở được nhiều hàng trong một chuyến và đưa vật liệu tới các bến, công trình nằm dọc sông, kênh.\n\nTrung Hiếu nhận vận chuyển cát, đá xây dựng bằng sà lan giữa các tỉnh miền Tây và TP.HCM, Đồng Nai, Bình Dương, Vũng Tàu, Cần Giờ, Phú Quốc. Liên hệ để được báo giá cạnh tranh theo tuyến đường và khối lượng hàng cần chở.",
+      "meta": [
+        "CÁT SAN LẤP",
+        "CÁT XÂY DỰNG",
+        "ĐÁ XÂY DỰNG"
+      ]
+    },
+    {
+      "id": "gach",
+      "type": "normal",
+      "num": "02",
+      "barge": "gach",
+      "accent": "#c45a3c",
+      "accentSoft": "#ffe0d3",
+      "kicker": "VẬN CHUYỂN GẠCH XÂY DỰNG BẰNG ĐƯỜNG THỦY",
+      "title": "02 / Gạch\nXây Dựng",
+      "desc": "Gạch là mặt hàng dễ vỡ, cần được xếp gọn và chở ổn định trên suốt hành trình. Đường thủy là lựa chọn phù hợp khi cần đưa số lượng gạch lớn từ nơi sản xuất tới các cửa hàng vật liệu, công trình ven sông ở miền Tây và khu vực TP.HCM.\n\nTrung Hiếu nhận chở gạch bằng sà lan trên các tuyến Sóc Trăng, Cần Thơ, An Giang, Long An, Cà Mau, TP.HCM, Bình Dương, Đồng Nai và Vũng Tàu, giao hàng đúng hẹn để công trình không bị gián đoạn.",
+      "meta": [
+        "GẠCH XÂY DỰNG",
+        "GIAO ĐÚNG HẸN",
+        "GIÁ CẠNH TRANH"
+      ]
+    },
+    {
+      "id": "coc-be-tong",
+      "type": "normal",
+      "num": "03",
+      "barge": "coc",
+      "accent": "#a7b0b8",
+      "accentSoft": "#e6e9ec",
+      "kicker": "VẬN CHUYỂN CỌC BÊ TÔNG CHO CÔNG TRÌNH VEN SÔNG",
+      "title": "03 / Cọc\nBê Tông",
+      "desc": "Cọc bê tông dài và nặng, chở bằng đường bộ thường vướng tải trọng xe, cầu đường và lối vào công trường. Với các công trình nằm gần sông, kênh như bến bãi, bờ kè, cầu, nhà xưởng ven sông, vận chuyển cọc bằng sà lan là phương án thuận tiện.\n\nTrung Hiếu nhận vận chuyển cọc bê tông bằng sà lan đến công trình tại Sóc Trăng, Cần Thơ, An Giang, Cà Mau, Long An, TP.HCM, Cần Giờ, Đồng Nai, Bình Dương và Vũng Tàu. Gọi để trao đổi về số lượng, chiều dài cọc và nhận báo giá.",
+      "meta": [
+        "CỌC BÊ TÔNG",
+        "CÔNG TRÌNH VEN SÔNG",
+        "GIÁ CẠNH TRANH"
+      ]
+    },
+    {
+      "id": "phe-lieu",
+      "type": "normal",
+      "num": "04",
+      "barge": "phelieu",
+      "accent": "#9a8f86",
+      "accentSoft": "#e6e9ec",
+      "kicker": "VẬN CHUYỂN PHẾ LIỆU BẰNG SÀ LAN",
+      "title": "04 / Phế\nLiệu",
+      "desc": "Phế liệu thường cồng kềnh, khối lượng lớn và cần chở đi xa tới nơi thu mua, tái chế. Vận chuyển bằng sà lan giúp gom được nhiều hàng trong một chuyến, phù hợp với các đơn vị thu mua phế liệu, cơ sở tái chế và công trình tháo dỡ.\n\nTrung Hiếu nhận vận chuyển phế liệu bằng sà lan giữa các tỉnh miền Tây với TP.HCM, Bình Dương, Đồng Nai, Vũng Tàu và các khu vực khác trong mạng lưới tuyến. Giá cả cạnh tranh, giao nhận đúng hẹn.",
+      "meta": [
+        "PHẾ LIỆU",
+        "GIÁ CẠNH TRANH",
+        "ĐÚNG HẸN"
+      ]
+    },
+    {
+      "id": "tuyen-van-chuyen",
+      "type": "normal",
+      "num": "05",
+      "barge": "cat",
+      "accent": "#5fa8c9",
+      "accentSoft": "#e3f1f7",
+      "kicker": "KHU VỰC HOẠT ĐỘNG • MIỀN TÂY – TP.HCM – ĐÔNG NAM BỘ",
+      "title": "05 / Tuyến\nVận Chuyển",
+      "desc": "Từ Sóc Trăng, sà lan Trung Hiếu thường chạy các tuyến đường thủy nội địa đi:\n• Miền Tây: Sóc Trăng, Cần Thơ, An Giang, Long An, Cà Mau.\n• TP.HCM và Đông Nam Bộ: TP.HCM, Cần Giờ, Bình Dương, Đồng Nai, Vũng Tàu.\n• Biển đảo: Phú Quốc.\n\nXem các tuyến sông, kênh và quãng đường ước tính trên bản đồ ở phần đầu trang. Liên hệ để được tư vấn tuyến phù hợp và báo giá cho từng chuyến hàng.",
+      "meta": [
+        "AN GIANG",
+        "LONG AN",
+        "PHÚ QUỐC",
+        "VŨNG TÀU",
+        "CẦN GIỜ",
+        "ĐỒNG NAI",
+        "BÌNH DƯƠNG",
+        "TP.HCM",
+        "CẦN THƠ",
+        "SÓC TRĂNG",
+        "CÀ MAU"
+      ]
+    },
+    {
+      "id": "lien-he",
+      "type": "contact",
+      "num": "06",
+      "barge": "phelieu",
+      "accent": "#d4a574",
+      "accentSoft": "#efe0d0",
+      "kicker": "LIÊN HỆ BÁO GIÁ VẬN CHUYỂN SÀ LAN",
+      "title": "Liên Hệ\nBáo Giá",
+      "desc": "Cần vận chuyển cát, đá, gạch, cọc bê tông hoặc phế liệu bằng sà lan? Hãy gọi cho Vận Tải Thủy Trung Hiếu để được tư vấn tuyến đường và báo giá cạnh tranh. Chúng tôi giao nhận đúng hẹn theo lịch đã thỏa thuận.",
+      "meta": [
+        "0918.108.369",
+        "077.959.6668"
+      ]
+    }
+  ],
+  "contact": {
+    "heading": "THÔNG TIN DOANH NGHIỆP",
+    "company": "CÔNG TY TNHH THƯƠNG MẠI VẬN TẢI THỦY TRUNG HIẾU",
+    "taxId": "2200208369",
+    "address": "13-14 Lô Ơ, Đường số 8, Khu đô thị 5A, Phường 4, TP. Sóc Trăng",
+    "phones": [
+      "0918.108.369",
+      "077.959.6668"
+    ],
+    "email": "",
+    "servicesTitle": "Hàng vận chuyển",
+    "services": "Cát, đá, gạch, cọc bê tông, phế liệu",
+    "areasTitle": "Khu vực vận chuyển",
+    "areas": "An Giang, Long An, Phú Quốc, Vũng Tàu, Cần Giờ, Đồng Nai, Bình Dương, TP.HCM, Cần Thơ, Sóc Trăng, Cà Mau",
+    "copyright": "© Công ty TNHH TM Vận Tải Thủy Trung Hiếu",
+    "slogan": "GIÁ CẠNH TRANH • ĐÚNG HẸN"
+  },
+  "look": {
+    "overlay": {
+      "side": "right",
+      "width": 44,
+      "color": "#140c06",
+      "opacity": 0.82,
+      "blur": 6,
+      "ink": "#fff8ee",
+      "text": "#eadbc6",
+      "link": "#8fcaf0",
+      "mobileHeight": 46
+    },
+    "logo": {
+      "image": "",
+      "pos": "tl",
+      "x": 20,
+      "y": 20,
+      "size": 26,
+      "radius": 7,
+      "bg": "#4a3528",
+      "color": "#fefcf8",
+      "pill": true,
+      "pillColor": "#fefcf8",
+      "pillOpacity": 0.92,
+      "showName": true,
+      "nameColor": "#4a3528",
+      "nameSize": 10
+    },
+    "badges": {
+      "counter": true,
+      "flow": true
+    },
+    "caption": {
+      "show": false,
+      "text": "Vận chuyển cát, đá, gạch,\ncọc bê tông, phế liệu bằng sà lan",
+      "pos": "bl",
+      "x": 20,
+      "y": 80,
+      "size": 22,
+      "color": "#ffffff",
+      "bg": "#000000",
+      "bgOpacity": 0.35
+    }
+  },
+  "typo": {
+    "headingFont": "Playfair Display",
+    "headingSize": 56,
+    "headingWeight": 500,
+    "headingItalic": false,
+    "headingTrack": -0.02,
+    "headingLine": 0.98,
+    "bodyFont": "Be Vietnam Pro",
+    "bodySize": 16,
+    "lineHeight": 1.8
+  },
+  "river": {
+    "flowLabel": "DÒNG CHẢY ↓",
+    "flowSub": "SÓC TRĂNG ⇄ TP.HCM • MIỀN TÂY",
+    "zoom": 1.15,
+    "flowSpeed": 45,
+    "scrollFactor": 0.9,
+    "waves": 1,
+    "brightness": 1,
+    "tone": "phusa",
+    "banks": true,
+    "bankWidth": 110,
+    "photo": true,
+    "hyacinth": 12,
+    "boats": 5,
+    "clouds": 4,
+    "flowLines": 1,
+    "bowWave": 1,
+    "dock": true,
+    "dockSide": "right",
+    "dockStart": 80,
+    "portLabel": "TRUNG HIẾU",
+    "bridge": true,
+    "bridgeEvery": 3600,
+    "image": ""
+  },
+  "map": {
+    "cities": [
+      {
+        "name": "An Giang",
+        "lon": 105.43,
+        "lat": 10.38,
+        "pos": "tl",
+        "home": false
+      },
+      {
+        "name": "Long An",
+        "lon": 106.41,
+        "lat": 10.54,
+        "pos": "tl",
+        "home": false
+      },
+      {
+        "name": "TP.HCM",
+        "lon": 106.7,
+        "lat": 10.78,
+        "pos": "tl",
+        "home": false
+      },
+      {
+        "name": "Bình Dương",
+        "lon": 106.652,
+        "lat": 10.981,
+        "pos": "l",
+        "home": false
+      },
+      {
+        "name": "Đồng Nai",
+        "lon": 106.82,
+        "lat": 10.95,
+        "pos": "r",
+        "home": false
+      },
+      {
+        "name": "Cần Giờ",
+        "lon": 106.953,
+        "lat": 10.412,
+        "pos": "bl",
+        "home": false
+      },
+      {
+        "name": "Vũng Tàu",
+        "lon": 107.08,
+        "lat": 10.35,
+        "pos": "r",
+        "home": false
+      },
+      {
+        "name": "Cần Thơ",
+        "lon": 105.79,
+        "lat": 10.04,
+        "pos": "tl",
+        "home": false
+      },
+      {
+        "name": "Sóc Trăng",
+        "lon": 105.97,
+        "lat": 9.6,
+        "pos": "r",
+        "home": true
+      },
+      {
+        "name": "Cà Mau",
+        "lon": 105.15,
+        "lat": 9.18,
+        "pos": "l",
+        "home": false
+      },
+      {
+        "name": "Phú Quốc",
+        "lon": 103.96,
+        "lat": 10.22,
+        "pos": "t",
+        "home": false
+      }
+    ],
+    "routes": [
+      {
+        "name": "Sóc Trăng – TP.HCM (Măng Thít – sông Tiền – kênh Chợ Gạo)",
+        "pts": [
+          [
+            105.97,
+            9.6
+          ],
+          [
+            106.081,
+            10.118
+          ],
+          [
+            106.498,
+            10.385
+          ],
+          [
+            106.639,
+            10.667
+          ],
+          [
+            106.7,
+            10.78
+          ]
+        ]
+      },
+      {
+        "name": "Sóc Trăng – Cần Thơ (sông Maspero – sông Hậu)",
+        "pts": [
+          [
+            105.97,
+            9.6
+          ],
+          [
+            105.79,
+            10.04
+          ]
+        ]
+      },
+      {
+        "name": "Cần Thơ – An Giang (sông Hậu)",
+        "pts": [
+          [
+            105.79,
+            10.04
+          ],
+          [
+            105.43,
+            10.38
+          ]
+        ]
+      },
+      {
+        "name": "Sóc Trăng – Cà Mau (kênh Quản Lộ – Phụng Hiệp)",
+        "pts": [
+          [
+            105.97,
+            9.6
+          ],
+          [
+            105.778,
+            9.71
+          ],
+          [
+            105.15,
+            9.18
+          ]
+        ]
+      },
+      {
+        "name": "Vàm Cỏ – Long An (sông Vàm Cỏ Tây)",
+        "pts": [
+          [
+            106.561,
+            10.502
+          ],
+          [
+            106.41,
+            10.54
+          ]
+        ]
+      },
+      {
+        "name": "TP.HCM – Bình Dương (sông Sài Gòn)",
+        "pts": [
+          [
+            106.7,
+            10.78
+          ],
+          [
+            106.652,
+            10.981
+          ]
+        ]
+      },
+      {
+        "name": "TP.HCM – Đồng Nai (sông Đồng Nai)",
+        "pts": [
+          [
+            106.7,
+            10.78
+          ],
+          [
+            106.82,
+            10.95
+          ]
+        ]
+      },
+      {
+        "name": "TP.HCM – Cần Giờ – Vũng Tàu (sông Lòng Tàu – vịnh Gành Rái)",
+        "pts": [
+          [
+            106.7,
+            10.78
+          ],
+          [
+            106.856,
+            10.585
+          ],
+          [
+            106.965,
+            10.457
+          ],
+          [
+            107.01,
+            10.385
+          ],
+          [
+            107.08,
+            10.35
+          ]
+        ]
+      },
+      {
+        "name": "An Giang – Rạch Giá – Phú Quốc (kênh Rạch Giá – Long Xuyên)",
+        "pts": [
+          [
+            105.43,
+            10.38
+          ],
+          [
+            105.08,
+            10.01
+          ],
+          [
+            103.96,
+            10.22
+          ]
+        ]
+      }
+    ]
+  },
+  "images": {
+    "cat": "",
+    "da": "",
+    "gach": "",
+    "coc": "",
+    "phelieu": ""
+  }
+}
