@@ -197,29 +197,75 @@ button{font:inherit;cursor:pointer}
 .contact .credit{margin-top:8px;font-size:10px;line-height:1.5;color:#b9aa98}
 
 
+/* ---------- điện thoại: sà lan luôn hiện ở nửa trên, nội dung là lớp phủ trong suốt ở nửa dưới ---------- */
+.sheet-grip{display:none}
 @media (max-width:900px),(orientation:portrait){
+  :root{--sheet-h:46svh}
+  body.sheet-open{--sheet-h:84svh}
   .layout{display:block}
-  .river{position:fixed;inset:0;width:100%;height:100vh;height:100lvh;z-index:0;border:0;touch-action:manipulation}
-  .b-brand{left:12px;top:12px}.b-count{right:12px;top:12px}.b-flow{left:12px;bottom:12px}
-  .journey{position:relative;z-index:1;width:100%;background:transparent;pointer-events:none}
+  .river{position:fixed;inset:0;width:100%;height:100vh;height:100lvh;z-index:0;border:0;touch-action:none}
+  .b-brand{left:12px;top:12px}.b-count{right:12px;top:12px}.b-flow{display:none}
+  .vignette{background:radial-gradient(ellipse at 50% 28%,transparent 50%,rgba(28,16,6,.45) 100%)}
+  /* lớp phủ: nền tối mờ dần từ trên xuống, chữ sáng; cuộn bên trong, không che sà lan */
+  .journey{position:fixed;left:0;right:0;bottom:0;width:auto;height:var(--sheet-h);z-index:2;
+    overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;scroll-behavior:smooth;scroll-snap-type:y proximity;
+    background:linear-gradient(to bottom,rgba(18,12,6,0) 0,rgba(18,12,6,.56) 56px,rgba(18,12,6,.78) 40%,rgba(18,12,6,.86) 100%);
+    -webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 40px);mask-image:linear-gradient(to bottom,transparent 0,#000 40px);
+    transition:height .4s cubic-bezier(.16,1,.3,1)}
   .rail,.sec-bar,.ghost{display:none}
-  .sections{padding:0}
-  .sec{min-height:100svh;justify-content:flex-end;padding:46svh 12px 20px;border:0;overflow:visible}
-  .sec-in,.sec.active .sec-in{pointer-events:auto;opacity:1;transform:none;background:rgba(254,252,248,.93);
-    -webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-radius:22px;padding:22px 20px;
-    border:1px solid rgba(255,255,255,.7);border-top:4px solid var(--acc);box-shadow:0 18px 50px rgba(20,10,0,.35)}
-  .ttl{margin-top:16px;font-size:calc(var(--h-size) * .66)}
-  .desc{margin-top:14px}
-  .chips{margin-top:18px}
-  .m-prog{display:flex;align-items:center;gap:8px;margin-top:12px;font-size:11px;color:#a89a8b}
-  .m-prog .l{width:40px;height:1px;background:#e0d2c0}
-  .m-prog b{color:var(--brown)}
-  .m-prog .bar{height:8px;flex:1;max-width:80px;background:#f1e6d6;border-radius:99px;overflow:hidden}
-  .m-prog .bar i{display:block;height:100%;background:var(--brown)}
-  .contact{padding:18px}
-  .contact .grid{grid-template-columns:1fr}
-  .journey::after{content:'';display:block;height:30svh}
+  .sections{padding:0 0 calc(24px + env(safe-area-inset-bottom))}
+  .sec{min-height:0;justify-content:flex-start;padding:46px 18px 30px;border:0;overflow:visible;scroll-snap-align:start;scroll-margin-top:-6px}
+  .sec+.sec{border-top:1px solid rgba(255,255,255,.08)}
+  .sec-in,.sec.active .sec-in{opacity:1;transform:none;background:none;border:0;box-shadow:none;padding:0}
+  .sec-head .num{color:rgba(255,238,215,.6)}
+  .sec-head .ln{background:rgba(255,238,215,.3)}
+  .sec-head .kick{background:rgba(255,255,255,.09);border-color:rgba(255,255,255,.16);color:color-mix(in srgb,var(--acc) 40%,#fff)}
+  .ttl{margin-top:14px;font-size:calc(var(--h-size) * .62);color:#fff8ee;text-shadow:0 2px 16px rgba(0,0,0,.5)}
+  .desc{margin-top:12px;color:rgba(255,246,232,.86);text-shadow:0 1px 8px rgba(0,0,0,.45)}
+  .chips{margin-top:16px}
+  .chips span{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.18);color:#f3e6d3}
+  .m-prog{display:flex;align-items:center;gap:8px;margin-top:10px;font-size:11px;color:rgba(255,238,215,.55)}
+  .m-prog .l{width:40px;height:1px;background:rgba(255,255,255,.25)}
+  .m-prog b{color:#fff3e2}
+  .m-prog .bar{height:6px;flex:1;max-width:80px;background:rgba(255,255,255,.14);border-radius:99px;overflow:hidden}
+  .m-prog .bar i{display:block;height:100%;background:var(--acc)}
+  .hero-x{margin-top:28px}
+  .co .mk{background:#fff6ea;color:var(--brown)}
+  .co .n1{color:#fff6ea}.co .n2{color:#d9bf9e}
+  .btn-dark{background:#fff6ea;color:#2b211a}.btn-dark:hover{background:#fff}
+  /* bản đồ: khung trong suốt, chữ sáng */
+  .map{margin-top:22px;background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.14)}
+  .map-hd{color:#ecdcc6;border-color:rgba(255,255,255,.12)}
+  .map-hd i,.map-ft button{color:#8fcaf0}
+  .map-lg{color:#cbb9a3;border-color:rgba(255,255,255,.12)}
+  .map .mapv{border-radius:0}
+  .rlist{border-color:rgba(255,255,255,.12);max-height:none}
+  .rlist li+li{border-color:rgba(255,255,255,.08)}
+  .rlist button{color:#fff4e6;padding:9px 14px}
+  .rlist button:hover{background:rgba(255,255,255,.05)}
+  .rlist button.on{background:rgba(196,90,60,.24)}
+  .rlist .rn small,.rlist .rk small{color:#bfae99}
+  .rlist .rk{color:#8fcaf0}
+  .rlist i{border-top-color:#8fcaf0}
+  .map-ft{color:#a9998a;border-color:rgba(255,255,255,.12)}
+  .map-ft a{color:#cbb9a3}
+  .stats div{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.14)}
+  .stats div:first-child{background:rgba(212,165,116,.2)}
+  .stats small{color:#d9bf9e}.stats b{color:#fff6ea}
+  .contact{padding:18px;background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.14)}
+  .contact .hd{color:#d9bf9e}
+  .contact .grid{grid-template-columns:1fr;color:rgba(255,246,232,.82)}
+  .contact h4{color:#fff6ea}
+  .contact .tag{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.16);color:#f3e6d3}
+  .contact .acts a{background:#fff6ea;color:#2b211a}
+  .contact .acts span{background:transparent;border-color:rgba(255,255,255,.22);color:#f3e6d3}
+  .contact .foot,.contact .credit{color:#a9998a}
+  /* tay nắm kéo lớp phủ lên / xuống */
+  .sheet-grip{display:grid;place-items:center;position:fixed;left:50%;bottom:calc(var(--sheet-h) - 30px);z-index:3;transform:translateX(-50%);
+    width:72px;height:30px;border:0;background:none;padding:0;transition:bottom .4s cubic-bezier(.16,1,.3,1)}
+  .sheet-grip i{display:block;width:40px;height:5px;border-radius:99px;background:rgba(255,248,236,.75);box-shadow:0 1px 6px rgba(0,0,0,.5)}
 }
+@media (prefers-reduced-motion:reduce){.journey,.sheet-grip{transition:none!important}}
 
 /* ---------- editor ---------- */
 .drawer{position:fixed;top:0;right:0;bottom:0;width:min(460px,100vw);z-index:100;background:#fffdf9;color:var(--ink);
@@ -313,6 +359,7 @@ details.it>div{padding:4px 14px 14px}
     <button class="pri" id="ftExport">Lưu &amp; xuất JSON</button>
   </div>
 </aside>
+<button class="sheet-grip" id="sheetGrip" type="button" aria-label="Kéo lớp nội dung lên hoặc thu gọn" aria-expanded="false"><i></i></button>
 <input type="file" id="importFile" accept="application/json,.json" hidden>
 <div class="toast" id="toast"></div>
 
@@ -1603,7 +1650,7 @@ const Scene = (() => {
   let photoBank = false, grabber = null, scrapPile = null, scrapClump = null;
   const boatCache = new Map(), hyaState = [], boatState = [];
   let vehicles = [];
-  let T = 0, drift = 0, sm = window.scrollY, off = 0, prevOff = 0, spd = 0, last = performance.now();
+  let T = 0, drift = 0, sm = 0, off = 0, prevOff = 0, spd = 0, last = performance.now();
   let lanes = [[0, 0], [0, 0]], bankPx = 0;
   const hit = { cx: 0, cy: 0, hw: 0, hh: 0 };
 
@@ -1630,14 +1677,23 @@ const Scene = (() => {
   }
 
   function R() { return state.river; }
+  let sheetTopPx = 0;
+  function sheetTop() {                          // mép trên của lớp phủ khi thu gọn
+    const j = $('.journey');
+    if (j && !document.body.classList.contains('sheet-open')) { const t = j.getBoundingClientRect().top; if (t > 0 && t < H) sheetTopPx = t; }
+    return sheetTopPx || H * 0.54;
+  }
 
   function resize() {
     const r = river.getBoundingClientRect();
     W = Math.max(1, r.width); H = Math.max(1, r.height);
     const z = clamp(+R().zoom || 1, 0.4, 3);
     const mob = MOBILE.matches;
-    Hb = mob ? Math.min(H * z, W * z * 1.1) : H * z;
-    CY = mob ? Math.max(Hb * 0.5, H * 0.3) : H / 2;
+    if (mob) {                                   // điện thoại: sà lan nằm trọn phía trên lớp phủ nội dung
+      const avail = clamp(sheetTop(), H * 0.3, H);
+      Hb = Math.min(avail * 0.9 * clamp(z / 1.15, 0.6, 1), W * z * 1.1);
+      CY = avail * 0.5 + 6;
+    } else { Hb = H * z; CY = H / 2; }
     k = Hb / 1000;
     rs = Math.min(window.devicePixelRatio || 1, 1.5) * (W * H > 900000 ? 0.62 : 0.75);
     waterC.width = Math.round(W * rs); waterC.height = Math.round(H * rs);
@@ -1692,9 +1748,9 @@ const Scene = (() => {
     const dt = Math.min(0.05, Math.max(0.001, (now - last) / 1000)); last = now;
     const r = R();
     T += dt;
-    sm += (window.scrollY - sm) * (1 - Math.exp(-dt * 6.5));
+    sm += (SCROLL.y() - sm) * (1 - Math.exp(-dt * 6.5));
     // ---- cập cảng: tiến độ theo vị trí cuộn cuối trang
-    const maxS = document.documentElement.scrollHeight - innerHeight;
+    const maxS = SCROLL.max();
     const prog = maxS > 0 ? clamp(sm / maxS, 0, 1) : 0;
     const ds = clamp((+r.dockStart || 80) / 100, 0.3, 0.97);
     const dockT = r.dock && port ? clamp((prog - ds) / Math.max(0.02, 0.985 - ds), 0, 1) : 0;
@@ -2034,6 +2090,12 @@ const Scene = (() => {
    ===================================================================== */
 let secEls = [], activeIdx = -1;
 const MOBILE = matchMedia('(max-width:900px),(orientation:portrait)');
+/* Vị trí cuộn: máy tính cuộn cả trang; điện thoại cuộn trong lớp phủ nội dung (.journey) */
+const SCROLL = {
+  el: () => MOBILE.matches ? document.querySelector('.journey') : null,
+  y() { const e = this.el(); return e ? e.scrollTop : window.scrollY; },
+  max() { const e = this.el(); return e ? e.scrollHeight - e.clientHeight : document.documentElement.scrollHeight - innerHeight; }
+};
 
 function applyTypo() {
   const t = state.typo, st = document.documentElement.style;
@@ -2098,12 +2160,13 @@ function renderContent() {
   const prev = activeIdx; activeIdx = -1; updateActive(prev);
 }
 function updateActive(force) {
-  const vh = innerHeight, line = MOBILE.matches ? vh * 0.6 : vh * 0.5;
+  const vh = innerHeight, j = SCROLL.el();
+  const line = j ? j.getBoundingClientRect().top + j.clientHeight * 0.38 : vh * 0.5;
   let idx = 0;
   secEls.forEach((el, i) => { if (el.getBoundingClientRect().top <= line) idx = i; });
   if (force !== undefined && force >= 0 && force < secEls.length && !secEls.length) idx = force;
-  const max = document.documentElement.scrollHeight - vh;
-  const p = max > 0 ? clamp(scrollY / max, 0, 1) : 0;
+  const max = SCROLL.max();
+  const p = max > 0 ? clamp(SCROLL.y() / max, 0, 1) : 0;
   $('#railFill').style.height = p * 100 + '%';
   $('#railKnob').style.top = p * 100 + '%';
   const n = state.sections.length;
@@ -2116,7 +2179,34 @@ function updateActive(force) {
   if (s) Scene.setBarge(s.barge);
 }
 let scrollQueued = false;
-addEventListener('scroll', () => { if (scrollQueued) return; scrollQueued = true; requestAnimationFrame(() => { scrollQueued = false; updateActive(); }); }, { passive: true });
+const onScroll = () => { if (scrollQueued) return; scrollQueued = true; requestAnimationFrame(() => { scrollQueued = false; updateActive(); }); };
+addEventListener('scroll', onScroll, { passive: true });
+document.querySelector('.journey').addEventListener('scroll', onScroll, { passive: true });
+
+/* Điện thoại: tay nắm mở rộng / thu gọn lớp phủ; vuốt trên mặt sông cũng cuộn nội dung */
+function bindSheet() {
+  const grip = $('#sheetGrip'), body = document.body;
+  const setOpen = o => { body.classList.toggle('sheet-open', o); grip.setAttribute('aria-expanded', o); setTimeout(onScroll, 450); };
+  let gy = null;
+  grip.addEventListener('pointerdown', e => { gy = e.clientY; grip.setPointerCapture(e.pointerId); });
+  grip.addEventListener('pointerup', e => {
+    if (gy === null) return; const dy = e.clientY - gy; gy = null;
+    setOpen(dy < -16 ? true : dy > 16 ? false : !body.classList.contains('sheet-open'));
+  });
+  const rv = $('#river'); let ly = null, lt = 0, vel = 0;
+  rv.addEventListener('touchstart', e => { if (!MOBILE.matches || e.touches.length !== 1) { ly = null; return; } ly = e.touches[0].clientY; lt = performance.now(); vel = 0; }, { passive: true });
+  rv.addEventListener('touchmove', e => {
+    if (ly === null) return;
+    const y = e.touches[0].clientY, now = performance.now(), j = SCROLL.el(); if (!j) return;
+    j.style.scrollBehavior = 'auto'; j.scrollTop += (ly - y) * 1.3;
+    vel = (ly - y) / Math.max(8, now - lt); ly = y; lt = now;
+  }, { passive: true });
+  rv.addEventListener('touchend', () => {
+    const j = SCROLL.el(); if (ly === null || !j) return; ly = null;
+    j.style.scrollBehavior = '';
+    if (Math.abs(vel) > 0.15) j.scrollBy({ top: vel * 420, behavior: 'smooth' });
+  }, { passive: true });
+}
 addEventListener('resize', () => updateActive());
 
 function applyRiver() {
@@ -2572,6 +2662,7 @@ window.addEventListener('DOMContentLoaded', async () => {
   });
   initMap();
   applyTypo(); renderContent();
+  bindSheet();
   Scene.start();
   loadPhotos().then(() => Scene.resize());
   await boot();
