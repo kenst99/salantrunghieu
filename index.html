@@ -2207,6 +2207,7 @@ const Scene = (() => {
   let photoBank = false, grabber = null, scrapPile = null, scrapClump = null;
   const boatCache = new Map(), hyaState = [], boatState = [];
   let vehicles = [];
+  let dockS = 0;
   let T = 0, drift = 0, sm = 0, off = 0, prevOff = 0, spd = 0, last = performance.now();
   let lanes = [[0, 0], [0, 0]], bankPx = 0;
   let X0 = 0, VW = 1, BX = 0;                    // vùng sông không bị lớp chữ che: từ X0, rộng VW; tâm sà lan BX
@@ -2315,7 +2316,11 @@ const Scene = (() => {
     const maxS = SCROLL.max();
     const prog = maxS > 0 ? clamp(sm / maxS, 0, 1) : 0;
     const ds = clamp((+r.dockStart || 80) / 100, 0.3, 0.97);
-    const dockT = r.dock && port ? clamp((prog - ds) / Math.max(0.02, 0.985 - ds), 0, 1) : 0;
+    // khi đã tới mục cuối (06): tự cập bến hết và xe gắp làm việc lặp lại, không cần kéo tới đáy trang
+    const atLast = secEls.length > 0 && activeIdx >= secEls.length - 1;
+    const dockGoal = r.dock && port ? Math.max(clamp((prog - ds) / Math.max(0.02, 0.985 - ds), 0, 1), atLast ? 1 : 0) : 0;
+    dockS += clamp(dockGoal - dockS, -dt * 0.6, dt * (dockGoal > dockS && atLast ? 0.4 : 3));
+    const dockT = dockS;
     const portIn = ease(clamp(dockT / 0.55, 0, 1)), lat = ease(clamp((dockT - 0.3) / 0.55, 0, 1)), docked = clamp((dockT - 0.8) / 0.2, 0, 1);
     // bên cập cảng: 'auto' = máy tính đặt cảng phía không có lớp chữ, điện thoại đặt bên phải
     const side = r.dockSide === 'left' ? -1 : r.dockSide === 'right' ? 1 : (MOBILE.matches ? 1 : state.look.overlay.side === 'left' ? 1 : -1);
