@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updatedAt": 1793411141795,
+  "updatedAt": 1793413404793,
   "seo": {
     "title": "Vận Tải Thủy Trung Hiếu – Sà lan chở cát đá, gạch, cọc bê tông, phế liệu",
     "description": "Công ty TNHH TM Vận Tải Thủy Trung Hiếu (Sóc Trăng, thành lập 2001) vận chuyển cát, đá, gạch, cọc bê tông, phế liệu bằng sà lan đi miền Tây, TP.HCM, Đồng Nai, Bình Dương, Vũng Tàu, Phú Quốc. Giá cạnh tranh, đúng hẹn. Gọi 0918.108.369.",
@@ -17,8 +17,8 @@
   "intro": {
     "ctaText": "GỌI 0918.108.369",
     "ctaHref": "tel:0918108369",
-    "cta2Text": "GỌI 077.959.6668",
-    "cta2Href": "tel:0779596668",
+    "cta2Text": "ZALO 077.959.6668",
+    "cta2Href": "https://zalo.me/0779596668",
     "routeTag": "MẠNG LƯỚI TUYẾN SÔNG",
     "showMap": true,
     "stats": [
@@ -122,7 +122,7 @@
       "id": "tuyen-van-chuyen",
       "type": "normal",
       "num": "05",
-      "barge": "cat",
+      "barge": "phelieu",
       "accent": "#5fa8c9",
       "accentSoft": "#e3f1f7",
       "kicker": "KHU VỰC HOẠT ĐỘNG • MIỀN TÂY – TP.HCM – ĐÔNG NAM BỘ",
@@ -165,7 +165,7 @@
     "address": "13-14 Lô Ơ, Đường số 8, Khu đô thị 5A, Phường 4, TP. Sóc Trăng",
     "phones": [
       "0918.108.369",
-      "077.959.6668"
+      "077.959.6668 | zalo"
     ],
     "email": "",
     "servicesTitle": "Hàng vận chuyển",
@@ -188,18 +188,18 @@
       "mobileHeight": 46
     },
     "logo": {
-      "image": "",
+      "image": "logo.png",
       "pos": "tl",
       "x": 20,
       "y": 20,
-      "size": 26,
+      "size": 46,
       "radius": 7,
       "bg": "#4a3528",
       "color": "#fefcf8",
       "pill": true,
-      "pillColor": "#fefcf8",
-      "pillOpacity": 0.92,
-      "showName": true,
+      "pillColor": "#ffffff",
+      "pillOpacity": 0.94,
+      "showName": false,
       "nameColor": "#4a3528",
       "nameSize": 10
     },
@@ -248,7 +248,7 @@
     "flowLines": 1,
     "bowWave": 1,
     "dock": true,
-    "dockSide": "right",
+    "dockSide": "auto",
     "dockStart": 80,
     "portLabel": "TRUNG HIẾU",
     "bridge": true,
